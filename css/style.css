@@ -1,0 +1,13 @@
+/* CSS global */
+
+:root {
+    --main-color: #0065FC; /* var(--main-color) */
+    --second-color: #DEEBFF; /* var(--second-color) */
+    --light-grey-color: #F2F2F2; /* var(--light-grey-color) */
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
