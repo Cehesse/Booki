@@ -22,7 +22,6 @@ h1{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
 }
 
 h2{
@@ -30,6 +29,12 @@ h2{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+
+input, i {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* CSS header */
@@ -75,4 +80,86 @@ header a img{
     color: var(--main-color);
     padding: 46px;
     border-top: solid 2px var(--main-color);
+}
+
+/* CSS Research and filtre */
+
+.research_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+/* .icone_loc, .city_search, .button_research{
+    padding: 1rem;
+}
+
+.icone_loc{
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    font-weight: bold;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+}
+.city_search{
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    border-right: transparent;
+    border-left: transparent;
+    font-weight: bold;
+}
+
+.button_research{
+    background-color: #0065fc;
+    color: white;
+    border-top: solid 1px #0065fc;
+    border-bottom: solid 1px #0065fc;
+    border-right: transparent;
+    border-left: transparent;
+    border-radius: 0 15px 15px 0;
+} */
+
+
+
+
+
+
+
+
+
+
+.filter_bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+} 
+
+.filter{
+    list-style-type: none;
+}
+.filter_bar li{
+    padding-left: 1rem;
+}   
+
+.filter_bar  {
+    font-weight: bold;
+    background-color: white;
+    border-top: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
+    border-left: transparent;
+    border-right: transparent;
+    p
+}
+
+.filter_bar i{
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    border-top: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
+    border-left: transparent;
+    font-weight: bold;
 }
