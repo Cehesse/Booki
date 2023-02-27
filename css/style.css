@@ -16,6 +16,10 @@ a{
     text-decoration: none;
 }
 
+.push-to-right{
+    margin-right: auto;
+}
+
 h1{
     font-size: 22px;
     line-height: 26px;
@@ -44,10 +48,6 @@ nav{
     margin-left: 55px;
     margin-right: 77px;
     margin-bottom: 11px;
-}
-
-.push-to-right{
-    margin-right: auto;
 }
 
 .accommodation-block{
@@ -189,31 +189,96 @@ header a img{
     border-radius: 50%;
 }
 
+/* CSS accomodation and popular */
+
+.accomodation_and_popular{
+    margin: 39px 50px 60px 50px;
+    height: 626px;
+    display: flex;
+    flex-direction: row;
+}
+
 .accomodation{
-    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: last baseline;
+    border-radius: 20px 20px 0px 0px;
+    width: 65.6%;
     background-color:var(--light-grey-color);
 }
-/* CSS card */
+
+.accomodation h1, .accomodation h2{
+    margin-left: 40px;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column; 
+    border-radius: 20px 20px 0px 0px;
+    width: 31.3%;
+    background-color:var(--light-grey-color);
+}
 
 .accomodation_card img{
     width: 100%;
-    height: 246px;
+    height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.accomodation_card{
-    height: 246px;
-    width: 199px;
+.accomodation_cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: start; 
+    gap: 31px;
+}
+
+.accomodation_card{
+    height: 199px;
+    width: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     background-color: white;
     border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.notation{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+}
+
+.accomodation_card h2{
+    margin-left: 0;
+    margin-top: 4px;
+    height: 15px;
+    width: 204px;
+}
+
+.accomodation_card p{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    height: 15px;
+    width: 204px;
 }
 
 .accomodation_card_text{
-    margin-left: 11px;
+    margin-left: 16px;
+}
+
+.accomodation_card i{
+    font-size: 12px;
+    margin-bottom: 11px;
+}
+
+.notation_4 i{
+    color: var(--main-color);
 }
