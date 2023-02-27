@@ -8,10 +8,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-	max-width: 1440px;
+	max-width: 1400px;
     margin: 0;
-    margin-left: 46px;
-    margin-right: 46px;
 }
 
 a{
@@ -22,19 +20,22 @@ h1{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
+    line-height: 26px;
+    margin: 0;
 }
 
 h2{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    margin-top: 8px;
     line-height: 19px;
+    margin-bottom: 0;
 }
 
-input, i {
+input, label {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
 }
 
 /* CSS header */
@@ -43,6 +44,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 55px;
+    margin-right: 26px;
 }
 
 .push-to-right{
@@ -64,7 +67,7 @@ nav{
 }
 
 header a img{
-   height: 1.1875rem; /* (19/16) */
+   height: 19px; 
    padding-top: 42px;
    padding-bottom: 42px;
   }
@@ -84,51 +87,50 @@ header a img{
 
 /* CSS Research and filtre */
 
+.research_section{
+    margin-left: 55px;
+    margin-top: 12px;
+}
+
 .research_bar{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    margin-top: 20px;
 }
 
-/* .icone_loc, .city_search, .button_research{
+.icone_loc, .city_search, .button_research{
     padding: 1rem;
 }
 
 .icone_loc{
-    border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
+    font-size: 18px;
     font-weight: bold;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
+    background-color: var(--light-grey-color);
+    border-top: solid 1px var(--light-grey-color);
+    border-bottom: solid 1px var(--light-grey-color);
+    border-radius: 15px 0 0 15px;
 }
 .city_search{
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
+    font-weight: bold;
+    border-top: solid 1px var(--light-grey-color);
+    border-bottom: solid 1px var(--light-grey-color);
     border-right: transparent;
     border-left: transparent;
-    font-weight: bold;
 }
 
 .button_research{
-    background-color: #0065fc;
     color: white;
-    border-top: solid 1px #0065fc;
-    border-bottom: solid 1px #0065fc;
+    background-color: var(--main-color);
+    border-top: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
     border-right: transparent;
     border-left: transparent;
     border-radius: 0 15px 15px 0;
-} */
+} 
 
-
-
-
-
-
-
-
-
-
+/* 
 .filter_bar{
     display: flex;
     flex-direction: row;
@@ -162,4 +164,5 @@ header a img{
     border-bottom: solid 2px #F2F2F2;
     border-left: transparent;
     font-weight: bold;
-}
+} 
+*/
