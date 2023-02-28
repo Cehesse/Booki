@@ -104,6 +104,7 @@ header a img{
 .icone_loc, .city_search, .button_research{
     font-size: 18px;  
     font-weight: 700;
+    line-height: 21px;
 }
 
 .icone_loc{
@@ -192,70 +193,30 @@ header a img{
 /* CSS accomodation and popular */
 
 .accomodation_and_popular{
-    margin: 39px 50px 60px 50px;
-    height: 626px;
-    display: flex;
-    flex-direction: row;
+    background-color: #DEEBFF;
+    margin: 50px;
+    height: 800px;
+    width: 800px;
 }
 
-.accomodation{
+.accomodation_card{
+    height: 189px;
+    width: 236px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
-    align-items: last baseline;
-    border-radius: 20px 20px 0px 0px;
-    width: 65.6%;
-    background-color:var(--light-grey-color);
-}
-
-.accomodation h1, .accomodation h2{
-    margin-left: 40px;
-}
-
-.popular{
-    display: flex;
-    flex-direction: column; 
-    border-radius: 20px 20px 0px 0px;
-    width: 31.3%;
-    background-color:var(--light-grey-color);
+    justify-content: space-between;
+    align-items: start;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .accomodation_card img{
     width: 100%;
     height: 124px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
 }
-
-.accomodation_cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start; 
-    gap: 31px;
-}
-
-.accomodation_card{
-    height: 199px;
-    width: 246px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    background-color: white;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.notation{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    justify-content: start;
-    align-items: center;
-}
-
 .accomodation_card h2{
     margin-left: 0;
     margin-top: 4px;
@@ -276,9 +237,23 @@ header a img{
 
 .accomodation_card i{
     font-size: 12px;
-    margin-bottom: 11px;
+    height: 12px;
+    width: 12px;
 }
 
-.notation_4 i{
-    color: var(--main-color);
+.notation{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 2px;
 }
+
+#star_1, #star_2, #star_3, #star_4{
+    color: var(--main-color)
+}
+
+#star_5{
+    color: var(--light-grey-color)
+}
+
