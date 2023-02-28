@@ -39,15 +39,13 @@ h3{
     margin: 0;
 }
 
-/* CSS header */
+/* CSS header layout*/
 
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 55px;
-    margin-right: 77px;
-    margin-bottom: 11px;
+    padding: 0 77px 11px 55px;
 }
 
 .accommodation-block{
@@ -67,6 +65,8 @@ nav{
 header a img{
    height: 19px;
   }
+  
+/* CSS header decoration*/
 
 .blue-link{
     color: black;
@@ -81,12 +81,10 @@ header a img{
     border-top: solid 2px var(--main-color);
 }
 
-/* CSS Research*/
+/* CSS Research layout*/
 
 .research_section{
-    margin-left: 55px;
-    margin-top: 11px;
-    margin-bottom: 12px;
+    padding: 0 0 12px 55px ;
 }
 
 .research_section h1{
@@ -100,6 +98,8 @@ header a img{
     align-items: center;
     margin-top: 20px;
 }
+
+/* CSS Research decoration*/
 
 .icone_loc, .city_search, .button_research{
     font-size: 18px;  
@@ -132,14 +132,18 @@ header a img{
     border-radius: 0 15px 15px 0;
 } 
 
-/* CSS filtres */
+/* CSS filtres layout */
+
+.filter_section{
+    padding: 0 0 12px 55px ;
+}
  
 .filter_bar{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-left: 62px;
+    margin-left: 7px;
 }
 
 .filters{
@@ -149,6 +153,7 @@ header a img{
     align-items: center;
     gap: 45px;
     list-style-type: none;
+    
 }
 
 .filter_bar li  {
@@ -166,21 +171,23 @@ header a img{
     border-radius: 25px;
 }
 
-.filter_section i{
-    color: var(--main-color);
-}
-
-.filter_bar li:active{
-    background-color: var(--second-color);
-}
-
 .information_text{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     gap: 10px;
-    margin-left: 59px;
+    margin-left: 4px;
+}
+
+/* CSS filtres decoration */
+
+.filter_section i{
+    color: var(--main-color);
+}
+
+.filter_bar li:active{
+    background-color: var(--second-color);
 }
 
 .fa-info{
@@ -190,14 +197,37 @@ header a img{
     border-radius: 50%;
 }
 
-/* CSS accomodation and popular */
+/* CSS accomodation and popular layout*/
 
 .accomodation_and_popular{
-    background-color: #DEEBFF;
-    margin: 50px;
-    height: 800px;
-    width: 800px;
+    height: 625px;
+    padding: 39px 50px 60px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.accomodation{
+    width: 65.6%;
+    height: 100%;
+}
+
+.popular{
+    width: 31.3%;
+    height: 100%;  
+}
+
+.accomodation, .popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey-color);
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* CSS accomodation card layout*/
 
 .accomodation_card{
     height: 189px;
@@ -206,40 +236,74 @@ header a img{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    background-color: white;
-    border: 5px solid white;
-    border-radius: 20px 20px 20px 20px;
 }
 
 .accomodation_card img{
+    height: 60%;
     width: 100%;
-    height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-.accomodation_card h2{
-    margin-left: 0;
-    margin-top: 4px;
-    height: 15px;
-    width: 204px;
+
+.accomodation_card_text{
+    height: 35%;
+    width: 86%;
+    margin: 4px 21px 6px 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .accomodation_card p{
-    margin-top: 9px;
-    margin-bottom: 9px;
-    height: 15px;
-    width: 204px;
+    margin: 4px 0 0 0;
 }
 
-.accomodation_card_text{
-    margin-left: 16px;
+/* CSS popular_card layout*/
+
+.popular_card{
+    height: 134px;
+    width: 333px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.accomodation_card i{
-    font-size: 12px;
-    height: 12px;
-    width: 12px;
+.popular_card img{
+    height: 100%;
+    width: 41%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
 }
+
+.popular_card_text{
+    height: 89%;
+    width: 51%;
+    margin: 10px 17px 7px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.popular_card p{
+    margin: 7px 0 0 0;
+}
+
+/* CSS card decoration*/
+
+.accomodation_and_popular article{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.3s;
+}
+
+.accomodation_and_popular article:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
 .notation{
     display: flex;
@@ -247,6 +311,12 @@ header a img{
     justify-content: start;
     align-items: start;
     gap: 2px;
+}
+
+.accomodation_and_popular i{
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
 }
 
 #star_1, #star_2, #star_3, #star_4{
@@ -257,3 +327,5 @@ header a img{
     color: var(--light-grey-color)
 }
 
+
+  
