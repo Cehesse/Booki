@@ -8,8 +8,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-	max-width: 1440px;
-    margin: 0;
+	max-width: 1400px;
+    margin: 0 48px;
 }
 
 a{
@@ -20,23 +20,18 @@ a{
     margin-right: auto;
 }
 
-h1{
+h1, h2{
     font-size: 22px;
     line-height: 26px;
     margin: 0;
-}
-
-h2{
-    font-size: 18px;
-    line-height: 21px;
-    margin: 0;
+    margin: 8px 0;
 }
 
 h3{
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin: 0;
+    margin: 4px 0;
 }
 
 /* CSS header layout*/
@@ -45,17 +40,16 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 77px 11px 55px;
 }
 
-.accommodation-block{
+.accommodation-link{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.activities-block{
+.activities-link{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,46 +77,39 @@ header a img{
 
 /* CSS Research layout*/
 
-.research_section{
-    padding: 0 0 12px 55px ;
-}
-
-.research_section h1{
-    margin-bottom: 8px;
-}
-
-.research_bar{
+.research-bar{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-top: 20px;
+    margin: 16px 0;
 }
 
 /* CSS Research decoration*/
 
-.icone_loc, .city_search, .button_research{
-    font-size: 18px;  
+.icone-loc, .city-search, .button-research{
     font-weight: 700;
+    font-size: 18px;  
     line-height: 21px;
 }
 
-.icone_loc{
-    padding: 16px 18px 15px 18px;
+.icone-loc{
+    padding: 16px;
     background-color: var(--light-grey-color);
     border-radius: 15px 0 0 15px;
+    font-weight: 700;
 }
 
-.city_search{   
-    padding: 13px 17px 13px 17px;
+.city-search{   
+    padding: 15px 16px;
     border-top: solid 1px var(--light-grey-color);
     border-bottom: solid 1px var(--light-grey-color);
     border-right: transparent;
     border-left: transparent;
 }
 
-.button_research{
-    padding: 13px 16px 13px 16px;
+.button-research{
+    padding: 15px 16px;
     color: white;
     background-color: var(--main-color);
     border-top: solid 1px var(--main-color);
@@ -132,18 +119,20 @@ header a img{
     border-radius: 0 15px 15px 0;
 } 
 
-/* CSS filtres layout */
-
-.filter_section{
-    padding: 0 0 12px 55px ;
+.research-section p, .filter-section p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 8px 0;
 }
+
+/* CSS filtres layout */
  
-.filter_bar{
+.filter-bar{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-left: 7px;
 }
 
 .filters{
@@ -151,17 +140,17 @@ header a img{
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 45px;
     list-style-type: none;
+    gap: 40px;
     
 }
 
-.filter_bar li  {
+.filter-bar li  {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     font-size: 17px;
     font-weight: 700;
     line-height: 20px;
@@ -171,22 +160,21 @@ header a img{
     border-radius: 25px;
 }
 
-.information_text{
+.information-text{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 10px;
-    margin-left: 4px;
+    gap: 8px;
 }
 
 /* CSS filtres decoration */
 
-.filter_section i{
+.filter-section i{
     color: var(--main-color);
 }
 
-.filter_bar li:active{
+.filter-bar li:hover, .filter-bar li:active{
     background-color: var(--second-color);
 }
 
@@ -199,9 +187,8 @@ header a img{
 
 /* CSS accomodation and popular layout*/
 
-.accomodation_and_popular{
-    height: 625px;
-    padding: 39px 50px 60px 50px;
+.accomodation-and-popular{
+    margin: 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -209,75 +196,88 @@ header a img{
 }
 
 .accomodation{
-    width: 65.6%;
+    width: 65%;
     height: 100%;
 }
 
 .popular{
-    width: 31.3%;
+    width: 32%;
     height: 100%;  
 }
 
 .accomodation, .popular{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: start;
     background-color: var(--light-grey-color);
     border-radius: 20px 20px 20px 20px;
 }
 
+.accomodation-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items:center;
+    row-gap: 32px;
+    column-gap: 3%;
+    margin: 0 40px;
+}
+
+.accomodation h2{
+    margin: 24px 5%;
+}
+
 /* CSS accomodation card layout*/
 
-.accomodation_card{
-    height: 189px;
-    width: 236px;
+.accomodation-card{
+    width: 28%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
 }
 
-.accomodation_card img{
-    height: 60%;
+.accomodation-card img{
+    height: 112px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.accomodation_card_text{
-    height: 35%;
-    width: 86%;
-    margin: 4px 21px 6px 11px;
+.accomodation-card-text{
+    height: 80 px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: start;
+    margin: 0 0 0 4px;
 }
 
-.accomodation_card p{
-    margin: 4px 0 0 0;
+.accomodation-card p{
+    margin: 4px 0;
 }
 
-/* CSS popular_card layout*/
+/* CSS popular-card layout A REVOIOR */
 
-.popular_card{
-    height: 134px;
-    width: 333px;
+.popular-card{
+    width: 81%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.popular_card img{
+.popular-card img{
     height: 100%;
     width: 41%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
 
-.popular_card_text{
+.popular-card-text{
     height: 89%;
     width: 51%;
     margin: 10px 17px 7px 15px;
@@ -287,13 +287,13 @@ header a img{
     align-items: start;
 }
 
-.popular_card p{
+.popular-card p{
     margin: 7px 0 0 0;
 }
 
 /* CSS card decoration*/
 
-.accomodation_and_popular article{
+.accomodation-and-popular article{
     background-color: white;
     border: 5px solid white;
     border-radius: 20px 20px 20px 20px;
@@ -301,7 +301,7 @@ header a img{
     transition-duration: 0.3s;
 }
 
-.accomodation_and_popular article:hover{
+.accomodation-and-popular article:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
@@ -311,21 +311,21 @@ header a img{
     justify-content: start;
     align-items: start;
     gap: 2px;
+    margin-bottom: 4px;
 }
 
-.accomodation_and_popular i{
+.accomodation-and-popular i{
     height: 12px;
     width: 12px;
     font-size: 12px;
 }
 
-#star_1, #star_2, #star_3, #star_4{
+.star-1, .star-2, .star-3, .star-4{
     color: var(--main-color)
 }
 
-#star_5{
+.star-5{
     color: var(--light-grey-color)
 }
-
 
   
