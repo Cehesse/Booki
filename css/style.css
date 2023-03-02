@@ -145,7 +145,7 @@ nav{
     border-radius: 25px;
 }
 
-.filter-bar-information-text{
+.filter-bar-info{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -187,11 +187,33 @@ nav{
 }
 
 .card-title, .card-subtitle{
-    margin: 4px 0;
+    margin: 8px 0;
 }
 
 .card-subtitle{
     font-size: 14px;
+}
+
+.card-notation{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2px;
+    margin-bottom: 4px;
+}
+
+.card-notation i{
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+}
+
+.star-1, .star-2, .star-3, .star-4{
+    color: var(--main-color)
+}
+
+.star-5{
+    color: var(--light-grey-color)
 }
 
 /* CSS accomodation and popular*/
@@ -284,35 +306,7 @@ nav{
 
 .popular-card img{
     height: 144px;
-    width: 41%;
+    width: 40%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
-
-/* CSS accomodation*/
-
-
-.notation{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    gap: 2px;
-    margin-bottom: 4px;
-}
-
-.notation i{
-    height: 12px;
-    width: 12px;
-    font-size: 12px;
-}
-
-.star-1, .star-2, .star-3, .star-4{
-    color: var(--main-color)
-}
-
-.star-5{
-    color: var(--light-grey-color)
-}
-
-  
