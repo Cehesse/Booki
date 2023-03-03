@@ -315,3 +315,49 @@ nav{
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
+
+.popular-section h2{
+    margin: 0 0 18px 0px;
+}
+
+/* CSS activities*/
+
+.activities-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.activities-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 32px;
+}
+
+.activities-cards img{
+    height: 384px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activities-cards figure{
+    margin: 0;
+}
+
+.activities-cards figcaption{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 16px 0 16px 16px;
+}
+
+.activities-cards .card{
+    padding: 0;
+}
+
+.activities-section-title{
+    margin-bottom: 24px;
+}
