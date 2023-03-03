@@ -54,6 +54,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .nav-logo{
@@ -139,7 +140,7 @@ nav{
     gap: 8px;
     font-size: 17px;
     font-weight: 700;
-    padding: 14px;
+    padding: 16px;
     background-color: white;
     border: solid 2px var(--light-grey-color);
     border-radius: 25px;
@@ -192,6 +193,10 @@ nav{
 
 .card-subtitle{
     font-size: 14px;
+}
+
+.card span{
+    font-weight: bold;
 }
 
 .card-notation{
