@@ -34,12 +34,10 @@ a{
 
 h1, h2{
     font-size: 22px;
-    margin: 8px 0;
 }
 
 h3{
     font-size: 16px;
-    margin: 8px 0;
 }
 
 i{
@@ -48,11 +46,6 @@ i{
 
 ul{
     list-style-type: none;
-}
-
-.research-section p, .filter-section p{
-    font-size: 16px;
-    margin: 8px 0;
 }
 
 /* CSS header*/
@@ -79,8 +72,18 @@ nav{
     padding: 46px;
     border-top: solid 2px var(--main-color);
 }
+/* CSS Research and Filters*/
+
+.research-section p, .filter-section p{
+    font-size: 16px;
+    margin: 8px 0;
+}
 
 /* CSS Research*/
+
+.research-section h1, .research-section p{
+    margin: 8px 0;
+}
 
 .research-bar{
     display: flex;
@@ -149,10 +152,10 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
-    padding: 8px 16px;
-    gap: 8px;
+    padding: 16px;
+    gap: 16px;
     background-color: white;
     border: solid 2px var(--light-grey-color);
     border-radius: 25px;
@@ -175,6 +178,11 @@ nav{
     font-size: 10px;
     padding: 6px 9px;
     border-radius: 50%;
+}
+
+.filter-bar-title{
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* CSS card*/
@@ -366,10 +374,12 @@ nav{
 
 .footer-section h3{
     margin: 0 0 16px 0;
+    font-size: 18px;
 }
 
 .footer-section li{
     padding-top: 16px;
+    font-size: 16px;
 }
 
 .activities-cards{
