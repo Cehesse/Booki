@@ -6,16 +6,20 @@
     --light-grey-color: #F2F2F2; /* var(--light-grey-color) */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .page{
-    font-family: 'Raleway', sans-serif;
-	max-width: 1400px;
-    box-sizing: border-box;
+	max-width: 1400px; 
     padding: 0 48px;
 }
 
@@ -42,6 +46,10 @@ i{
     color: var(--main-color);
 }
 
+ul{
+    list-style-type: none;
+}
+
 .research-section p, .filter-section p{
     font-size: 16px;
     margin: 8px 0;
@@ -54,7 +62,6 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
 
 .nav-logo{
@@ -112,7 +119,11 @@ nav{
     border-right: transparent;
     border-left: transparent;
     border-radius: 0 15px 15px 0;
-} 
+}
+
+.research-bar i{
+    color: black;
+}
 
 /* CSS filtres*/
  
@@ -121,6 +132,7 @@ nav{
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    margin: 24px 0 32px 0;
 }
 
 .filter-bar-filters{
@@ -128,8 +140,8 @@ nav{
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    list-style-type: none;
     gap: 40px;
+    margin-left: 32px;
 }
 
 .filter-bar-unit{
@@ -137,10 +149,10 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     font-size: 17px;
     font-weight: 700;
-    padding: 16px;
+    padding: 8px 16px;
+    gap: 8px;
     background-color: white;
     border: solid 2px var(--light-grey-color);
     border-radius: 25px;
@@ -213,10 +225,6 @@ nav{
     font-size: 12px;
 }
 
-.star-1, .star-2, .star-3, .star-4{
-    color: var(--main-color)
-}
-
 .star-5{
     color: var(--light-grey-color)
 }
@@ -224,11 +232,10 @@ nav{
 /* CSS accomodation and popular*/
 
 .accomodation-and-popular-section{
-    margin: 40px 0 64px 0;
+    margin: 40px 0 56px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .accomodation-section{
@@ -246,11 +253,6 @@ nav{
     background-color: var(--light-grey-color);
     border-radius: 20px;
     padding: 40px;
-    box-sizing: border-box;
-}
-
-.accomodation-and-popular-title, .accomodation-and-popular-text{
-    margin: 0;
 }
 
 /* CSS accomodation*/
@@ -316,10 +318,6 @@ nav{
     border-radius: 20px 0 0 20px;
 }
 
-.popular-section h2{
-    margin: 0 0 18px 0px;
-}
-
 /* CSS activities*/
 
 .activities-section{
@@ -327,6 +325,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    margin: 56px 0;
 }
 
 .activities-cards{
@@ -344,20 +343,39 @@ nav{
     border-radius: 20px 20px 0 0;
 }
 
-.activities-cards figure{
-    margin: 0;
-}
-
 .activities-cards figcaption{
     font-size: 16px;
     font-weight: 700;
     margin: 16px 0 16px 16px;
 }
 
-.activities-cards .card{
-    padding: 0;
-}
-
 .activities-section-title{
     margin-bottom: 24px;
+}
+
+/* CSS footer*/
+
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 232px ;
+    padding: 48px 64px;
+    background-color: var(--light-grey-color);
+}
+
+.footer-section h3{
+    margin: 0 0 16px 0;
+}
+
+.footer-section li{
+    padding-top: 16px;
+}
+
+.activities-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 32px;
 }
