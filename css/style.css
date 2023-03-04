@@ -154,7 +154,7 @@ nav{
     align-items: center;
     font-size: 18px;
     font-weight: 700;
-    padding: 16px;
+    padding: 8px 16px;
     gap: 16px;
     background-color: white;
     border: solid 2px var(--light-grey-color);
@@ -169,7 +169,7 @@ nav{
     gap: 8px;
 }
 
-.filter-bar li:hover, .filter-bar li:active{
+.filter-bar-unit:hover, .filter-bar-unit:active{
     background-color: var(--second-color);
 }
 
