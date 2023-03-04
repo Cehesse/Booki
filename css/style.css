@@ -286,7 +286,7 @@ nav{
 }
 
 .accomodation-card img{
-    height: 124px;
+    height: 108px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -333,7 +333,7 @@ nav{
 }
 
 .popular-card img{
-    height: 144px;
+    height: 124px;
     width: 40%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
@@ -354,7 +354,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    gap: 4%;
+    gap: 32px;
 }
 
 .activities-cards img{
