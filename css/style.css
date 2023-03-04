@@ -190,13 +190,13 @@ nav{
 .card{
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition-duration: 0.3s;
     padding: 5px;
 }
 
 .card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
   }
 
 .card-text{
@@ -247,17 +247,14 @@ nav{
 }
 
 .accomodation-section{
-    width: 65%;
+    width: 64%;
 }
 
 .popular-section{
-    width: 32%; 
+    width: 33%; 
 }
 
 .accomodation-section, .popular-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: var(--light-grey-color);
     border-radius: 20px;
     padding: 40px;
@@ -265,19 +262,27 @@ nav{
 
 /* CSS accomodation*/
 
+.accomodation-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 8fr 0.5fr;
+}
+
 .accomodation-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 32px;
+    padding: 24px 0 60px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .accomodation-card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 29%;
+    width: 100%;
 }
 
 .accomodation-card img{
@@ -294,6 +299,12 @@ nav{
 
 /* CSS popular*/
 
+.popular-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 8.5fr;
+}
+
 .popular-header{
     display: flex;
     flex-direction: row;
@@ -306,11 +317,13 @@ nav{
 }
 
 .popular-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 32px;
     padding: 24px 0 0 0;
-    row-gap: 32px;
+    justify-content: center;
+    align-items: center;
 }
 
 .popular-card{
@@ -373,13 +386,12 @@ nav{
 }
 
 .footer-section h3{
-    margin: 0 0 16px 0;
     font-size: 18px;
 }
 
 .footer-section li{
-    padding-top: 16px;
     font-size: 16px;
+    margin-top: 16px;;
 }
 
 .activities-cards{
