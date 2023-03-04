@@ -272,7 +272,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 32px;
+    gap: 4%;
     padding: 24px 0 60px 0;
     justify-content: center;
     align-items: center;
@@ -354,7 +354,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    gap: 32px;
+    gap: 4%;
 }
 
 .activities-cards img{
@@ -380,7 +380,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 232px ;
+    gap: 19%;
     padding: 48px 64px;
     background-color: var(--light-grey-color);
 }
