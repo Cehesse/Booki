@@ -1,3 +1,52 @@
+/* RESET CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESET CSS*/
+
+
+
 /* CSS global */
 
 :root {
@@ -7,8 +56,6 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -62,14 +109,14 @@ nav{
   }
   
 .nav-blue-link{
-    padding: 46px;
+    padding: 46px 3.5%;
     border-top: solid 2px transparent;
     border-bottom: solid 2px transparent;
 }
 
 .nav-blue-link:hover{
     color: var(--main-color);
-    padding: 46px;
+    padding: 46px 3.5%;
     border-top: solid 2px var(--main-color);
 }
 /* CSS Research and Filters*/
@@ -143,7 +190,7 @@ nav{
     justify-content: start;
     align-items: center;
     width: 100%;
-    gap: 3%;
+    column-gap: 3%;
     margin-left: 1%;
 }
 
@@ -154,7 +201,7 @@ nav{
     align-items: center;
     font-size: 18px;
     font-weight: 700;
-    gap: 8px;
+    column-gap: 8px;
     padding: 16px 1%;
     background-color: white;
     border: solid 2px var(--light-grey-color);
@@ -166,7 +213,7 @@ nav{
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 20px;
+    column-gap: 1%;
 }
 
 .filter-bar-unit:hover, .filter-bar-unit:active{
@@ -204,7 +251,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    margin: 0 0 0 4px;
+    margin-bottom: 4px;
 }
 
 .card-title, .card-subtitle{
@@ -223,7 +270,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 5%;
+    column-gap: 5%;
     margin-bottom: 4px;
 }
 
@@ -272,7 +319,8 @@ nav{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 4%;
+    column-gap: 5%;
+    row-gap: 32px;
     padding: 24px 0 60px 0;
     justify-content: center;
     align-items: center;
@@ -320,8 +368,9 @@ nav{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
-    gap: 4%;
-    padding: 24px 0 0 0;
+    column-gap: 4%;
+    row-gap: 32px;
+    padding-top: 24px;
     justify-content: center;
     align-items: center;
 }
@@ -354,7 +403,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 3%;
+    column-gap: 3%;
 }
 
 .activities-cards img{
@@ -367,7 +416,7 @@ nav{
 .activities-cards figcaption{
     font-size: 16px;
     font-weight: 700;
-    margin: 16px 0 16px 16px;
+    margin: 16px 0 16px 5%;
 }
 
 .activities-section-title{
@@ -380,7 +429,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 19%;
+    column-gap: 18%;
     padding: 48px 64px;
     background-color: var(--light-grey-color);
 }
@@ -427,7 +476,7 @@ nav{
     }
 
     .footer-section{
-        gap: 12%;
+        gap: 10%;
     }
 
 }
