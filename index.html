@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booki</title>
+        <meta name="description" content="Booki par openclassroom">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +20,32 @@
             <!-- SECTION 1 HEADER -->
             <header>
                 <nav>
-                    <a href="index.html" class="push-to-right"><img src="./images/logo/Booki.png" alt="logo de Booki" class="nav-logo"></a>
-                    <a href="#accomodation" class="nav-blue-link ">Hébergements</a>
-                    <a href="#activities" class="nav-blue-link">Activités</a>     
+                    <div class="logo-block push-to-right">
+                        <a href="index.html"><img src="./images/logo/Booki.png" alt="logo de Booki" class="nav-logo"></a>
+                    </div>
+                    <div class="nav-blue-link accommodation_block">
+                        <a href="#accomodation">Hébergements</a>  
+                    </div>
+                    <div class="nav-blue-link activities_block">
+                        <a href="#activities">Activités</a>     
+                    </div>
+                    
                 </nav>     
             </header>
 
             <main>  
-                <!-- SECTION 2 RESEARCH-->    
+                <!--SECTION 2 RESEARCH  -->  
                 <section class="research-section">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>         
+                    <p>En plein centre ville ou en pleine nature</p>     
                     <form method="get" id="city-choose" class="research-bar">
                         <label for="city"><i class="fa-sharp fa-solid fa-location-dot research-bar-icone-loc"></i></label>
                         <input type="search" id="city" name="city" class="research-bar-city-search" value="Marseille, France">
-                        <input form="city-choose" type="submit" class="research-bar-button-research" value="Rechercher">               
+                        <button form="city-choose" type="submit" class="research-bar-button-research desktop-tablette">Rechercher</button> 
+                        <button form="city-choose" type="submit" class="research-bar-button-research mobile"><i class="fa-solid fa-search"></i></button>         
                     </form>
-                </section>
-                <!-- SECTION 3 FILTERS-->
+                </section> 
+                 <!--SECTION 3 FILTERS -->
                 <section class="filter-section">
                     <div class="filter-bar">
                         <h2 class="filter-bar-title">Filtres</h2>
@@ -61,10 +70,10 @@
                     </div>
                     <div class="filter-bar-info">
                         <i class="fa-solid fa-info filter-bar-info-logo"></i>
-                        <p>Plus de 500 logements sont disponible dans cette ville</p>    
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>    
                     </div>
-                </section>
-                <!-- SECTION 4 ACCOMODATION AND POPULAR-->
+                </section> 
+                <!-- SECTION 4 ACCOMODATION AND POPULAR -->
                 <section class="accomodation-and-popular-section" id="accomodation">
                     <div class="accomodation-section">
                             <h2 class="accomodation-and-popular-title">Hébergement à Marseille</h2>  
@@ -242,8 +251,8 @@
                             </a >
                         </div>        
                     </div>      
-                </section>
-                <!-- SECTION 5 ACTIVITIES-->    
+                </section> 
+                <!-- SECTION 5 ACTIVITIES    -->
                 <section class="activities-section">
                     <h2 class="activities-section-title">Activités à Marseille</h2>  
                     <div class="activities-cards">
@@ -282,7 +291,7 @@
                     </div>
                 </section>
             </main>
-            <!-- SECTION 6 FOOTER--> 
+             <!-- SECTION 6 FOOTER -->
             <footer class="footer-section">
                 <article>
                     <h3>À propos</h3>
@@ -306,7 +315,7 @@
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </article>
-            </footer>
+            </footer> 
         </div>
     </body>
 </html>
