@@ -19,7 +19,7 @@
         <div class="page">
             <!-- SECTION 1 HEADER -->
             <header>
-                <nav>
+                <nav class="nav-section">
                     <div class="logo-block push-to-right">
                         <a href="index.html"><img src="./images/logo/Booki.png" alt="logo de Booki" class="nav-logo"></a>
                     </div>
@@ -32,7 +32,6 @@
                     
                 </nav>     
             </header>
-
             <main>  
                 <!--SECTION 2 RESEARCH  -->  
                 <section class="research-section">
@@ -41,8 +40,8 @@
                     <form method="get" id="city-choose" class="research-bar">
                         <label for="city"><i class="fa-sharp fa-solid fa-location-dot research-bar-icone-loc"></i></label>
                         <input type="search" id="city" name="city" class="research-bar-city-search" value="Marseille, France">
-                        <button form="city-choose" type="submit" class="research-bar-button-research desktop-tablette">Rechercher</button> 
-                        <button form="city-choose" type="submit" class="research-bar-button-research mobile"><i class="fa-solid fa-search"></i></button>         
+                        <button form="city-choose" type="submit" class="research-bar-button-research research-bar-desktop-tablette">Rechercher</button> 
+                        <button form="city-choose" type="submit" class="research-bar-button-research research-bar-mobile"><i class="fa-solid fa-search"></i></button>         
                     </form>
                 </section> 
                  <!--SECTION 3 FILTERS -->
@@ -253,7 +252,7 @@
                     </div>      
                 </section> 
                 <!-- SECTION 5 ACTIVITIES    -->
-                <section class="activities-section">
+                <section class="activities-section" id="activities">
                     <h2 class="activities-section-title">Activités à Marseille</h2>  
                     <div class="activities-cards">
                         <div class="activities-card card">
