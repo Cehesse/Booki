@@ -157,6 +157,8 @@ ul{
     border-bottom: solid 1px var(--light-grey-color);
     border-right: transparent;
     border-left: transparent;
+    width: 50%;
+    max-width: 240px;
 }
 
 .research-bar-button-research{
@@ -621,7 +623,7 @@ ul{
     .activities-section-title {
         margin-bottom: 0;
     }
-    
+
     .activities-cards img{
         height: 128px;
     }
