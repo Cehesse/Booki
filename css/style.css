@@ -64,7 +64,7 @@ body {
 
 .page{
 	max-width: 1400px; 
-    padding: 0 6%;
+    padding: 0 5%;
 }
 
 a{
@@ -253,11 +253,11 @@ ul{
     justify-content: space-between;
     align-items: start;
     margin-bottom: 4px;
-    margin-left: 4%;
+    margin-left: 3%;
 }
 
 .card-title, .card-subtitle{
-    margin: 8px 0;
+    margin: 4px 0;
 }
 
 .card-subtitle{
@@ -294,11 +294,11 @@ ul{
 }
 
 .accomodation-section{
-    width: 64%;
+    width: 65%;
 }
 
 .popular-section{
-    width: 33%; 
+    width: 32%; 
 }
 
 .accomodation-section, .popular-section{
@@ -319,7 +319,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    column-gap: 3%;
+    column-gap: 4%;
     row-gap: 32px;
     padding: 24px 0 60px 0;
 }
@@ -331,7 +331,7 @@ ul{
 }
 
 .accomodation-card img{
-    height: 108px;
+    height: 92px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
