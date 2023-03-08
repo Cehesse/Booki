@@ -252,6 +252,7 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    height: 100%;
     margin-bottom: 4px;
     margin-left: 3%;
 }
@@ -327,7 +328,8 @@ ul{
 .accomodation-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    height: 100%;
 }
 
 .accomodation-card img{
