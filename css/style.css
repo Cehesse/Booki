@@ -116,6 +116,7 @@ ul{
 
 .nav-logo{
    height: 19px;
+   width: 61px;
   }
   
 .nav-blue-link {
@@ -157,8 +158,6 @@ ul{
     border-bottom: solid 1px var(--light-grey-color);
     border-right: transparent;
     border-left: transparent;
-    width: 50%;
-    max-width: 240px;
 }
 
 .research-bar-button-research{
@@ -319,7 +318,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    column-gap: 5%;
+    column-gap: 3%;
     row-gap: 32px;
     padding: 24px 0 60px 0;
 }
@@ -386,14 +385,15 @@ ul{
 }
 
 .activities-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2%;
+    width: 100%;
 }
 
 .activities-cards img{
-    height: 384px;
+    height: 352px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -402,7 +402,7 @@ ul{
 .activities-cards figcaption{
     font-size: 16px;
     font-weight: 700;
-    margin: 16px 0 16px 5%;
+    margin: 16px 0 16px 0;
 }
 
 .activities-section-title{
@@ -611,8 +611,8 @@ ul{
     }
 
     .activities-cards{
-        width: 100%;
-        flex-direction: column;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
         row-gap: 24px;
     }
 
