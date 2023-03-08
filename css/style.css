@@ -142,6 +142,7 @@ ul{
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    width: 100%;
     margin: 16px 0;
 }
 
@@ -518,6 +519,11 @@ ul{
     
     .research-section, .filter-section{
         padding: 0 5%;
+    }
+
+    .research-bar-city-search{
+        max-width: 240px;
+        width: 80%;
     }
 
     .research-bar-mobile{
