@@ -358,7 +358,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
-    row-gap: 32px;
+    row-gap: 24px;
     padding-top: 24px;
     justify-content: center;
     align-items: center;
@@ -387,11 +387,15 @@ ul{
     margin: 56px 0;
 }
 
+.activities-cards .card{
+    padding: 0;
+}
+
 .activities-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    column-gap: 2%;
+    column-gap: 3%;
     width: 100%;
 }
 
@@ -405,7 +409,7 @@ ul{
 .activities-cards figcaption{
     font-size: 16px;
     font-weight: 700;
-    margin: 16px 0 16px 0;
+    padding: 16px 24px 16px 24px;
 }
 
 .activities-section-title{
@@ -456,7 +460,7 @@ ul{
     .popular-cards{
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3,1fr);
-        column-gap: 4%;
+        column-gap: 24px;
     }
 
     .activities-cards img{
