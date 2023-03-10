@@ -470,6 +470,10 @@ ul{
         gap: 5%;
     }
 
+    .activities-cards .card-text{
+        height: 100%;
+    }
+
     .footer-section{
         gap: 12%;
     }
