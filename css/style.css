@@ -147,10 +147,11 @@ ul{
 }
 
 .research-bar-icone-loc{
-    padding: 17.5px;
+    padding: 15.5px;
     background-color: var(--light-grey-color);
     border-radius: 15px 0 0 15px;
     font-weight: 700;
+    border: solid 1px var(--light-grey-color);;
 }
 
 .research-bar-city-search{   
