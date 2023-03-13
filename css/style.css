@@ -100,7 +100,8 @@ ul{
 
 .research-bar-icone-loc, .research-bar-city-search, 
 .research-bar-button-research, .filter-bar-title, 
-.accomodation-p, .popular-icone, .footer-section h3{
+.accomodation-p, .popular-icone, .footer-section h3,
+.filter-bar-unit{
     font-size: 18px;
     font-weight: 700;
 }
@@ -150,7 +151,6 @@ ul{
     padding: 17.5px;
     background-color: var(--light-grey-color);
     border-radius: 15px 0 0 15px;
-    font-weight: 700;
 }
 
 .research-bar-city-search{   
@@ -206,8 +206,6 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size:18px;
-    font-weight: 700;
     column-gap: 8px;
     padding: 16px 1%;
     background-color: white;
@@ -429,7 +427,7 @@ ul{
 
 .footer-section li{
     font-size: 16px;
-    margin-top: 16px;;
+    margin-top: 16px;
 }
 
 /* Media queries */
